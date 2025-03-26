@@ -161,11 +161,11 @@ body {
     justify-content: center;
     border: 2px solid pink;  
 }
-
 .you {
-    width: 80%;             
-    height: auto;            
+    width: 100%;             
+    height: 100%;            
     object-position: center; /* Center face and body */
+    object-fit: cover;
     border-radius: 50%;  
 }
 
@@ -187,6 +187,7 @@ section{
     justify-content: center;
     gap: 5rem;
     height: 80vh;
+    width: max-content;
 }
 
 .section__pic.container {
@@ -283,10 +284,8 @@ section{
 /*ABOUT SECTION*/
 
 #about{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .section__pic-container, .text-container{
