@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Emmanuella B. Owusu</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a> </li>
+                <li><a href="#experience">Experience</a> </li>
+                <li><a href="#projects">Projects</a> </li>
+                <li><a href="#contacts">Contact</a> </li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Emmanuella B. Owusu </div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a> </li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a> </li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a> </li>
+            <li><a href="#contacts" onclick="toggleMenu()">Contact</a> </li>
+          </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+           <img src="./assets/me.jpg"
+            alt="Emmanuella B. Owusu profile picture" 
+            class="you"
+            />
+        </div>
+        <div class="section__text">
+          <p class="section__text__p1>">Hello, I'm</p>
+          <h1 class="title">Emmanuella B. Owusu</h1>
+          <p class="section__text__p2">Computer Science Student</p>
+          <div class="btn-container">
+            <button class="btn btn-color-2" onclick="window.open('./assets/Resume  .pdf')">
+                Download CV
+            </button>
+            <button class="btn btn-color-1" onclick="location.href='./#contacts'">
+                Contact Info
+            </button>
+          </div>
+          <div id="socials-container">
+              <img src="./assets/L logo.png"
+               alt="My Linkedin profile" 
+               class="icon" 
+               onclick="location.href='https://www.linkedin.com/in/emmanuella-owusu-0345b8264'" />
+
+              <img src="./assets/G logo.png" 
+              alt="My Github profile" 
+              class="icon" 
+              onclick="location.href='https://github.com/ABoahenmaa'" />
+          </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div classs="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/me.jpg" 
+                alt="Profile picture"
+                class="about-pic"
+                />
+            </div>
+            <div class="text-container">
+               <p>
+                Hi, I’m Emmanuella Boahenmaa Owusu, a passionate Computer Science Student dedicated to creating impactful solutions through design, technology and content creation. 
+                With a strong background in Social Media Management and UI/UX design, I thrive on blending creativity with strategy to deliver results that matter.
+                Currently, I serve as the Welfare Chair for NUGS, where I focus on empowering students through innovative initiatives. 
+                I’m also spearheading workshops on Canva and CapCut to bridge the gap between digital creativity and practical application.
+                Beyond my professional pursuits, I’m deeply invested in the intersection of education, technology, and industry. 
+                Through my work with the Education and Aspirations Hub, I contribute to digital transformation projects, fostering opportunities for learning and professional growth.
+                I also enjoy sharing insights on AI, digital trends, and innovation, engaging audiences on platforms like LinkedIn. 
+                Whether it’s crafting solutions, leading initiatives, or sparking discussions, my goal is to make an impact and inspire others along the way.
+               </p>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
